@@ -16,7 +16,7 @@ const projects = [
     {
       id: 1,
       name: 'Good Weeds',
-      href: 'https://goodweeds.herokuapp.com/',
+      live: 'https://goodweeds.herokuapp.com/',
       repo: 'github',
       imageSrc: 'https://user-images.githubusercontent.com/67671637/192348054-1213ed5c-ea06-485d-a69b-8310388130ca.png',
       imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
@@ -24,7 +24,7 @@ const projects = [
     {
       id: 2,
       name: 'INtertain',
-      href: '#',
+      live: '#',
       repo: 'github',
       imageSrc: 'https://github.com/NW-Bootcamp-Team1/Night-In/raw/main/assets/Homepage.png',
       imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
@@ -32,20 +32,27 @@ const projects = [
     {
       id: 3,
       name: 'Work Day Scheduler',
-      href: 'https://hollygparker.github.io/hw5-WorkDayScheduler/',
-      repo: 'GITHUB',
+      live: 'https://hollygparker.github.io/hw5-WorkDayScheduler/',
+      repo: 'https://github.com/hollygparker/hw5-WorkDayScheduler',
       imageSrc: 'https://user-images.githubusercontent.com/67671637/179055125-894563b3-48ab-4b6a-bd83-a999de753163.png',
       imageAlt: 'Person using a pen to cross a task off a projectsivity paper card.',
     },
     {
       id: 4,
       name: 'J.A.T.E',
-      href: 'https://jate-text-editor-404.herokuapp.com/',
+      live: 'https://jate-text-editor-404.herokuapp.com/',
       repo: 'https://github.com/hollygparker/PWA-TextEditor-JATE',
       imageSrc: 'https://user-images.githubusercontent.com/67671637/197890701-91ede160-d31e-4e7a-974f-e00e6fa873ea.png',
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
-    // More projects...
+    {
+        id: 4,
+        name: 'J.A.T.E',
+        live: 'https://hollygparker.github.io/WeatherDashboard/',
+        repo: 'https://github.com/hollygparker/WeatherDashboard',
+        imageSrc: 'https://user-images.githubusercontent.com/67671637/180467183-c0857cf8-f933-46e9-b60c-258dba628447.png',
+        imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+      },
   ]
   
   export default function Projects() {
@@ -56,7 +63,7 @@ const projects = [
   
           <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             {projects.map((projects) => (
-              <a key={projects.id} href={projects.href} className="group">
+              <a key={projects.id} href={projects.live} className="group">
                 <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
                   <img
                     src={projects.imageSrc}
@@ -64,8 +71,10 @@ const projects = [
                     className="h-full w-full object-cover object-center group-hover:opacity-75"
                   />
                 </div>
-                <h3 className="mt-4 text-sm text-gray-700">{projects.name}</h3>
-                <a className="mt-1 text-lg font-medium text-gray-900">{projects.repo}</a>
+                <h3 className="mt-4 text-lg text-gray-700">{projects.name}</h3>
+                <a className="mt-1 text-lg font-medium text-purple-900" href={projects.repo}>GitHub Repo</a>
+                <a className="ml-9 text-lg font-medium text-purple-900" href={projects.live}>Live Site</a>
+
               </a>
             ))}
           </div>
