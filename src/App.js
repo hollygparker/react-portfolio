@@ -1,7 +1,7 @@
 import "./index.css";
-import React from "react";
-import { BrowserRouter} from "react-router-dom";
-import { Switch, Route } from "react-router-dom";
+// import React from "react";
+// import { BrowserRouter} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import { NavBar } from "./components/NavBar";
 import Landing from "./components/Landing";
@@ -14,8 +14,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <BrowserRouter>
-        <Switch>
+        <Routes>
           <Route path="/">
             <Landing />
           </Route>
@@ -28,9 +27,8 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-        </Switch>
-      </BrowserRouter>
 
+          </Routes>
       <Footer />
     </>
   );
