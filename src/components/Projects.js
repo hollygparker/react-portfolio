@@ -20,6 +20,7 @@ const projects = [
       repo: 'https://github.com/The-Brain-Cell-Collective/goodWeeds',
       imageSrc: 'https://user-images.githubusercontent.com/67671637/192348054-1213ed5c-ea06-485d-a69b-8310388130ca.png',
       imageAlt: 'Screenshot of good weeds application',
+      lang: 'Handlebars, Node, SQL, JS, Materialize'
     },
     {
       id: 2,
@@ -28,6 +29,7 @@ const projects = [
       repo: 'https://github.com/NW-Bootcamp-Team1/Night-In',
       imageSrc: 'https://github.com/NW-Bootcamp-Team1/Night-In/raw/main/assets/Homepage.png',
       imageAlt: 'Screenshot of INtertain application',
+      lang: 'HTML, CSS, JS, Materialize'
     },
     {
       id: 3,
@@ -36,6 +38,7 @@ const projects = [
       repo: 'https://github.com/hollygparker/hw5-WorkDayScheduler',
       imageSrc: 'https://user-images.githubusercontent.com/67671637/179055125-894563b3-48ab-4b6a-bd83-a999de753163.png',
       imageAlt: 'Screenshot of work day schedulerapplication',
+      lang: 'HTML, CSS, JS'
     },
     {
       id: 4,
@@ -44,6 +47,7 @@ const projects = [
       repo: 'https://github.com/hollygparker/PWA-TextEditor-JATE',
       imageSrc: 'https://user-images.githubusercontent.com/67671637/197890701-91ede160-d31e-4e7a-974f-e00e6fa873ea.png',
       imageAlt: 'Screenshot of JATE application',
+      lang: 'HTML, CSS, JS, Webpack, IndexedDB'
     },
     {
         id: 5,
@@ -52,6 +56,8 @@ const projects = [
         repo: 'https://github.com/hollygparker/WeatherDashboard',
         imageSrc: 'https://user-images.githubusercontent.com/67671637/180467183-c0857cf8-f933-46e9-b60c-258dba628447.png',
         imageAlt: 'Screenshot of Weather dashboard application',
+        lang: 'HTML, CSS, JS'
+
     },
       {
         id: 6,
@@ -60,6 +66,7 @@ const projects = [
         repo: 'https://github.com/hollygparker/PasswordGenerator',
         imageSrc: 'https://user-images.githubusercontent.com/67671637/176048563-7c64738f-066a-484f-ae75-0b078baec5b9.png',
         imageAlt: 'Screenshot of passsword Generator application',
+        lang: 'HTML, CSS, JS'
     },
   ]
   
@@ -80,6 +87,7 @@ const projects = [
                   />
                 </div>
                 <h3 className="mt-4 text-lg text-gray-700">{projects.name}</h3>
+                <h3 className="mt-2 mb-2 text-lg text-gray-500">{projects.lang}</h3>
                 <a className="mt-1 text-lg font-medium text-purple-900 hover:text-purple-300" href={projects.repo}>GitHub Repo</a>
                 <a className="ml-9 text-lg font-medium text-purple-900 hover:text-purple-300" href={projects.live}>Live Site</a>
 
