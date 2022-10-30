@@ -16,10 +16,10 @@ function Landing() {
             </div>
           </main>
 
-<div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+<div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 md:ml-60">
 <img
-  className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-  src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+  className="w-96 h-96 rounded-full mt-20"
+  src="https://ca.slack-edge.com/T03CHCNSHAT-U03GY6663U5-e6dd79c26eca-512"
   alt=""
 />
 </div>
