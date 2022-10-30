@@ -3,12 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Footer() {
   return (
-    <div className="fixed bottom-0 w-full flex justify-center mb-9">
+
+
+    <div className="fixed sticky bottom-0 w-full flex justify-center bg-indigo-100	">
       <ul className="flex flex-wrap items-center mt-3 text-sm text-white-500 dark:text-indigo-700 sm:mt-0 text-lg">
         
      
         {/* LINKEDIN */}
-        <li className="ml-5">
+        <li className="ml-5 mb-3 mt-3">
           <a
             href="https://www.linkedin.com/in/holly-parker-70581214a/"
             className="text-gray-400 hover:text-grey-900 dark:hover:text-blue"
@@ -71,6 +73,8 @@ function Footer() {
         </li>
       </ul>
     </div>
+   
+
   );
 }
 
