@@ -65,7 +65,7 @@ function Footer() {
 
         {/* RESUME */}
         <li>
-          <a href="https://docs.google.com/document/d/1yBHTF9Uqh_mRv5bn8aHwFb5UWE1c7d0XfQcDqD29lFw/edit?usp=share_link" className="mr-4 hover:underline md:mr-6 ml-5">
+          <a href="https://docs.google.com/document/d/1yBHTF9Uqh_mRv5bn8aHwFb5UWE1c7d0XfQcDqD29lFw/edit?usp=share_link" target="_blank" className="mr-4 hover:underline md:mr-6 ml-5">
           RESUME
           </a>
         </li>
