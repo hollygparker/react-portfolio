@@ -6,6 +6,7 @@ const navigation = [
   { name: 'Projects', href: '/projects' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
+  { name: 'Home', href: '/portfolio' },
   
 ]
 
@@ -29,7 +30,7 @@ export function NavBar() {
               <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                 <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
                   <div className="flex w-full items-center justify-between md:w-auto">
-                    <h1 className="block text-indigo-600 xl:inline text-3xl ">Holly Parker</h1>
+                    <h1 className="block text-indigo-600 xl:inline text-3xl "><a href='/portfolio'>Holly Parker</a></h1>
                     <div className="-mr-2 flex items-center md:hidden">
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Open main menu</span>

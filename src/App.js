@@ -1,7 +1,7 @@
 import "./index.css";
 // import React from "react";
-// import { BrowserRouter} from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 
 import { NavBar } from "./components/NavBar";
 import Landing from "./components/Landing";
@@ -14,8 +14,10 @@ function App() {
   return (
     <>
       <NavBar />
-        <Routes>
-          <Route path="/">
+        <Router>
+          <Switch>
+
+          <Route path="/portfolio">
             <Landing />
           </Route>
           <Route path="/projects">
@@ -27,8 +29,9 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
+          </Switch>
 
-          </Routes>
+          </Router>
       <Footer />
     </>
   );
