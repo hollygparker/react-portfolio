@@ -10,7 +10,7 @@ function Landing() {
                 <span className="block text-indigo-600 xl:inline">Engineer</span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                Hi, my name is holly. 
+              As a recent Northwestern Bootcamp Graduate, I am looking to pivot from a Client Care Specialist in the FinTech enviornment to a Software Engineer.
               </p>
               
             </div>
