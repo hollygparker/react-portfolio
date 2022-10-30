@@ -5,7 +5,7 @@ function Footer() {
   return (
 
 
-    <div className="fixed sticky bottom-0 w-full flex justify-center bg-indigo-100	">
+    <div className="fixed bottom-0 w-full flex justify-center bg-indigo-100	">
       <ul className="flex flex-wrap items-center mt-3 text-sm text-white-500 dark:text-indigo-700 sm:mt-0 text-lg">
         
      
