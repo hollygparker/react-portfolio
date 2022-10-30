@@ -1,8 +1,8 @@
 import "./index.css";
-// import React from "react";
+// ROUTING IMPORTS
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import { Routes, Route } from "react-router-dom";
 
+// COMPONENTS
 import { NavBar } from "./components/NavBar";
 import Landing from "./components/Landing";
 import ContactForm from "./components/ContactForm";
@@ -16,7 +16,6 @@ function App() {
       <NavBar />
         <Router>
           <Switch>
-
           <Route path="/portfolio">
             <Landing />
           </Route>
@@ -30,7 +29,6 @@ function App() {
             <About />
           </Route>
           </Switch>
-
           </Router>
       <Footer />
     </>
