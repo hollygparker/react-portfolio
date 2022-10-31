@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.632549ac.css",
-    "main.js": "/react-portfolio/static/js/main.a2b2ecba.js",
-    "index.html": "/react-portfolio/index.html",
-    "main.632549ac.css.map": "/react-portfolio/static/css/main.632549ac.css.map",
-    "main.a2b2ecba.js.map": "/react-portfolio/static/js/main.a2b2ecba.js.map"
+    "main.css": "/hollygparker/react-portfolio/static/css/main.632549ac.css",
+    "main.js": "/hollygparker/react-portfolio/static/js/main.a2b2ecba.js",
+    "index.html": "/hollygparker/react-portfolio/index.html",
+    "main.632549ac.css.map": "/hollygparker/react-portfolio/static/css/main.632549ac.css.map",
+    "main.a2b2ecba.js.map": "/hollygparker/react-portfolio/static/js/main.a2b2ecba.js.map"
   },
   "entrypoints": [
     "static/css/main.632549ac.css",
