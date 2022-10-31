@@ -16,9 +16,9 @@ function Landing() {
             </div>
           </main>
 
-<div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 md:ml-60">
+<div className="lg:absolute lg:inset-y-11 lg:right-1 lg:w-1/2 mt-12 md:ml-60">
 <img
-  className="w-96 h-96 rounded-full mt-20"
+  className="w-96 h-96 rounded-full mt-4 mx-7"
   src="https://ca.slack-edge.com/T03CHCNSHAT-U03GY6663U5-e6dd79c26eca-512"
   alt=""
 />
