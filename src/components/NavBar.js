@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { NavLink } from 'react-router-dom'
 
 const navigation = [
   { name: 'Projects', href: '/projects' },
@@ -15,15 +16,7 @@ export function NavBar() {
     <div className="relative overflow-hidden bg-white">
       <div className="mx-auto max-w-7xl">
         <div className="relative z-5 bg-white pb-8 sm:pb-52 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
-          {/* <svg
-            className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
-            fill="currentColor"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg> */}
+
 
           <Popover>
             <div className="relative px-4 pt-6 sm:px-6 lg:px-8">
@@ -41,9 +34,10 @@ export function NavBar() {
                 </div>
                 <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
                   {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
-                      {item.name}
-                    </a>
+                    <NavLink key={item.name} to={item.href} className="font-medium text-gray-500 hover:text-gray-900">{item.name}</NavLink>
+                    // <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
+                    //   {item.name}
+                    // </a>
                   ))}
                   
                 </div>

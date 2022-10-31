@@ -13,29 +13,28 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-   <BrowserRouter>
-      {/* <HashRouter basename="/"> */}
-
+   {/* <BrowserRouter> */}
+      <HashRouter>
       <NavBar />
         <Router>
           <Switch>
-          <Route path="/react-portfolio/#/portfolio">
+          <Route path="/portfolio">
             <Landing />
           </Route>
-          <Route path="/react-portfolio/#/projects">
+          <Route path="/projects">
             <Projects />
           </Route>
-          <Route path="/react-portfolio/#/contact">
+          <Route path="/contact">
             <ContactForm />
           </Route>
-          <Route path="/react-portfolio/#/about">
+          <Route path="/about">
             <About />
           </Route>
           </Switch>
           </Router>
       <Footer />
-      {/* </HashRouter> */}
-</BrowserRouter>
+      </HashRouter>
+{/* </BrowserRouter> */}
     </>
   );
 }
