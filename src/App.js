@@ -21,13 +21,13 @@ function App() {
           <Route path="/react-portfolio">
             <Landing />
           </Route>
-          <Route path="/react-portfolio/projects">
+          <Route path="//react-portfolioProjects">
             <Projects />
           </Route>
-          <Route path="/react-portfolio/contact">
+          <Route path="//react-portfolioContact">
             <ContactForm />
           </Route>
-          <Route path="/react-portfolio/about">
+          <Route path="//react-portfolioAbout">
             <About />
           </Route>
           </Switch>
