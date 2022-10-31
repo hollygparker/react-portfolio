@@ -7,7 +7,7 @@ const navigation = [
   { name: 'Projects', href: '/projects' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
-  { name: 'Home', href: '/portfolio' },
+  { name: 'Home', href: '/react-portfolio' },
   
 ]
 
@@ -23,7 +23,9 @@ export function NavBar() {
               <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                 <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
                   <div className="flex w-full items-center justify-between md:w-auto">
-                    <h1 className="block text-indigo-600 xl:inline text-3xl "><a href='/portfolio'>Holly Parker</a></h1>
+                    <h1 className="block text-indigo-600 xl:inline text-3xl ">
+                      <NavLink to='/react-portfolio'>Holly Parker</NavLink>
+                    </h1>
                     <div className="-mr-2 flex items-center md:hidden">
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Open main menu</span>
@@ -69,13 +71,13 @@ export function NavBar() {
 
                   <div className="space-y-1 px-2 pt-2 pb-3">
                     {navigation.map((item) => (
-                      <a
+                      <NavLink
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
                       >
                         {item.name}
-                      </a>
+                      </NavLink>
                     ))}
                   </div>
 

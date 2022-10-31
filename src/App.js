@@ -18,16 +18,16 @@ function App() {
       <NavBar />
         <Router>
           <Switch>
-          <Route path="/portfolio">
+          <Route path="/react-portfolio">
             <Landing />
           </Route>
-          <Route path="/projects">
+          <Route path="/react-portfolio/projects">
             <Projects />
           </Route>
-          <Route path="/contact">
+          <Route path="/react-portfolio/contact">
             <ContactForm />
           </Route>
-          <Route path="/about">
+          <Route path="/react-portfolio/about">
             <About />
           </Route>
           </Switch>
