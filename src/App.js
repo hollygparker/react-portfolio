@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-   <BrowserRouter basename="react-portfolio">
+   <BrowserRouter>
       {/* <HashRouter> */}
       <NavBar />
         <Router>
@@ -21,13 +21,13 @@ function App() {
           <Route exact path="/react-portfolio">
             <Landing />
           </Route>
-          <Route path="/projects">
+          <Route path="/react-portfolioProjects">
             <Projects />
           </Route>
-          <Route path="/contact">
+          <Route path="/react-portfolioContact">
             <ContactForm />
           </Route>
-          <Route  path="/about">
+          <Route  path="/react-portfolioAbout">
             <About />
           </Route>
           </Switch>
